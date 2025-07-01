@@ -1,0 +1,46 @@
+.hero{
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)),
+        url('../images/heroimgs/Imagemhero.jpg');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1; 
+
+        &__branding{
+            padding: 24px;
+
+            img{
+                max-width: 250px;
+            }
+        }
+
+        &__buttons{
+            padding: 24px;
+            text-align:center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero{
+        min-height: 400px;
+        
+        &__content{
+            &__branding{
+                img{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+

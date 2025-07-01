@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fovorite movie</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img src="./dist/images/heroimgs/Demon-Slayer-Logo.png" alt="">
+            </h1>
+            <ul class="header__container__links">
+                <li class="header__container__links__item">
+                    <a href="#descricao">Descrição</a>
+                </li>
+                <li class="header__container__links__item">
+                    <a href="#personagens">Personagens</a>
+                </li>
+                <li class="header__container__links__item">
+                    <a href="#duvidas">Dúvidas</a>
+                </li>
+                <li class="header__container__links__item">
+                    <a href="">Minha Lista +</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./src/images/heroimgs/logohero2.png" alt="">
+            </div>
+            <div class="hero__content__buttons">
+                <button class="hero__content__buttons button__red button__primary">
+                    Assistir agora
+                </button>
+                <button class="hero__content__buttons button__red button__secondary ">
+                    Saiba mais
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="descricao" class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="sinopse" class="shows__tabs__button shows__tabs__button--is-active">Sinopse</button>
+            <button data-tab-button="sugestoes" class="shows__tabs__button">Sugestões</button>
+        </nav>
+        <ul data-tab-id="sinopse" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <h1>Demon Slayer: Mugen train</h1>
+                <p>
+                    Depois que uma série de desaparecimentos misteriosos começa a assolar um trem, as tentativas do Demon Slayer Corps para remediar o problema se mostram infrutíferas. Para evitar mais baixas, o Pilar da Chama, Kyojuro Rengoku, assume a responsabilidade de eliminar a ameaça. Acompanhando-o estão alguns dos novos recrutas mais promissores do Corpo: Tanjiro Kamado, Zenitsu Agatsuma e Inosuke Hashibira, que esperam testemunhar os feitos de fogo deste modelo de matador de demônios em primeira mão.
+                    Sem o conhecimento deles, as forças demoníacas responsáveis pelos desaparecimentos já colocaram seu plano sinistro em ação. Sob esta presença demoníaca, o grupo deve reunir cada grama de sua força de vontade e desembainhar suas espadas para salvar todos os duzentos passageiros a bordo. Kimetsu no Yaiba: Mugen Ressha-hen investiga os cantos mais profundos da mente de Tanjiro, colocando sua determinação e compromisso com o dever à prova. 
+                </p>
+            </li>
+        </ul>
+        <ul data-tab-id="sugestoes" class="shows__list">
+            <li class="shows__list__item">
+                <img src="src/images/temporadas/temporada1.jpg" alt="Demon Slayer 1°">
+                <p>1° Temporada completa</p>
+                <button class="button__red button__primary" >Assistir agora</button>
+                <button class="button__red button__secondary" >Minha lista</button>
+            </li>
+            <li class="shows__list__item">
+                <img src="src/images/temporadas/temporada2.jpg" alt="Demon Slayes 2°">
+                <p>1° Temporada completa</p>
+                <button class="button__red button__primary" >Assistir agora</button>
+                <button class="button__red button__secondary" >Minha lista</button>
+            </li>
+            <li class="shows__list__item">
+                <img src="src/images/temporadas/temporada3.jpg" alt="Demon Slayer 3°">
+                <p>1° Temporada completa</p>
+                <button class="button__red button__primary" >Assistir agora</button>
+                <button class="button__red button__secondary" >Minha lista</button>
+            </li>
+        </ul>
+    </section>
+    <section id="personagens" class="plans">
+        <h1>Personagen Principais</h1>
+        <div class="plans__container">
+            <ul class="plans__list">
+                <li class="plans__list__personagens plans__list__personagens--tanjiro" data-target="modal-tanjiro">
+                    <img src="./dist/images/personagens/tanjiro3-removebg-preview.png" alt="">
+                    <h2>Tangiro</h2>
+                </li>
+                <li class="plans__list__personagens  plans__list__personagens--zenitsu" data-target="modal-zenitsu">
+                    <img src="./dist/images/personagens/zenitsu3-removebg-preview.png" alt="">
+                    <h2>Zenitsu</h2>
+                </li>
+                <li class="plans__list__personagens plans__list__personagens--inosuke" data-target="modal-inosuke">
+                    <img src="./dist/images/personagens/inosuke2-removebg-preview.png" alt="">
+                    <h2>Inosuke</h2>
+                </li>
+                <li class="plans__list__personagens plans__list__personagens--nezuko" data-target="modal-nezuko">
+                    <img src="./dist/images/personagens/nezko-removebg-preview.png" alt="">
+                    <h2>Nezuko</h2>
+                </li>
+                <li class="plans__list__personagens plans__list__personagens--enmu" data-target="modal-enmu">
+                    <img src="./dist/images/personagens/emu-removebg-preview.png" alt="">
+                    <h2>Emu</h2>
+                </li>
+                <li class="plans__list__personagens plans__list__personagens--rengoku" data-target="modal-rengoku">
+                    <img src="./dist/images/personagens/rengoku-removebg-preview.png" alt="">
+                    <h2>Rengoku</h2>
+                </li>
+                <li class="plans__list__personagens plans__list__personagens--akaza" data-target="modal-akaza">
+                    <img src="./dist/images/personagens/akaza-removebg-preview.png" alt="">
+                    <h2>Akaza</h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="duvidas" class="faq">
+        <h1>Perguntas frequentes</h1>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    <p>O que é Demon Slayer?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    <p>Demon Slayer (ou Kimetsu no Yaiba) é um anime e mangá japonês que conta a história de Tanjiro Kamado,</p>
+                    <p>um jovem bondoso que se torna caçador de demônios após sua família ser massacrada e sua irmã Nezuko ser transformada em um demônio</p>
+                    <p>ele embarca numa jornada para vingar sua família e encontrar uma cura para sua irmã.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question"  data-faq-question>
+                    <p>Esse filme se encaixa aonde cronológicamente na história?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    <p>Esse Filme vem logo depois da primeira temporada.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    <p>Por que assistir o filme por aqui?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    <p>Por aqui temos alta qualidade de imagem e sem anúncios atrapalhando seu filme.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <ul class="footer__link">
+            <li class="footer__link__item">
+                <div class="lenguage-selector">
+                    <img src="./dist/images/heroimgs/globe.svg" alt="Globo">
+                    <select>
+                        <option>English</option>
+                        <option selected>Português</option>
+                    </select>
+                </div>
+            </li>
+            <li class="footer__link__item">
+                <a href="">Termos e condições</a>
+            </li>
+            <li class="footer__link__item">
+                <a href="">Politica e privacidade</a>
+            </li>
+            <li class="footer__link__item">
+                <a href="">Sobre nós</a>
+            </li>
+            <li class="footer__link__item">
+                <a href="">Ajuda</a>
+            </li>
+        </ul>
+        <p class="text--small">
+            © 2025 Disney e suas empresas afiliadas. Todos os direitos reservados.
+        </p>
+    </footer>
+    <div class="modais">
+        <div id="modal-tanjiro" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Tanjiro Kamado</h2>
+        <strong>
+            <span>Espadachim</span>
+            <span>Tecnica: Respiração da Àgua</span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Tanjiro é um jovem bondoso que vivia tranquilamente com sua família nas montanhas até que uma tragédia mudou sua vida para sempre. Após encontrar seus entes queridos mortos por demônios, ele decide se tornar um caçador para proteger os inocentes e buscar uma forma de salvar sua irmã Nezuko, a única sobrevivente — agora transformada em demônio. Com determinação inabalável e domínio da Respiração da Água, Tanjiro enfrenta cada inimigo com coragem e compaixão.</p>
+            </div>
+        </div>
+        <div id="modal-zenitsu" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Zenitsu Agatsuma</h2>
+        <strong>
+            <span>Espadachim</span>
+            <span>Tecnica: Respiração do Trovão</span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Zenitsu é um jovem medroso e inseguro, que constantemente duvida de si mesmo. Apesar de parecer covarde, ele possui grande potencial quando está inconsciente ou em perigo extremo. Discípulo da Respiração do Trovão, Zenitsu surpreende inimigos com sua velocidade relâmpago e técnica precisa. Mesmo com seus medos, carrega um forte desejo de proteger os outros e se provar digno.</p>
+            </div>
+        </div>
+        <div id="modal-inosuke" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Inosuke Hashibira</h2>
+        <strong>
+            <span>Espadachim</span>
+            <span>Tecnica: Respiração da Besta</span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Inosuke é um espadachim impulsivo e selvagem, criado por animais na floresta. Sempre usando uma cabeça de javali como máscara, ele tem uma personalidade explosiva e está sempre pronto para lutar. Sua técnica, a Respiração da Besta, é feroz e instintiva, combinando força bruta e agilidade. Apesar do jeito rude, Inosuke desenvolve laços fortes com seus companheiros de batalha.</p>
+            </div>
+        </div>
+        <div id="modal-nezuko" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Nezuko Kamado</h2>
+        <strong>
+            <span>Demonio</span>
+            <span>Kekkijutsu: Bekketsu</span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Nezuko é a irmã mais nova de Tanjiro, transformada em demônio após o massacre de sua família. Apesar da transformação, ela mantém traços humanos, como empatia e proteção aos inocentes. Silenciosa e determinada, luta ao lado do irmão com força impressionante, usando seu estilo próprio de combate demoníaco e uma força de vontade que desafia sua natureza.</p>
+            </div>
+        </div>
+        <div id="modal-enmu" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Enmu</h2>
+        <strong>
+            <span>Demonio</span>
+            <span>Kekkijutsu: Kyosei Konto Saimin no Sasayaki - Akumu</span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Enmu é a Lua Inferior Um dos Doze Kizuki e o principal vilão do arco do Trem Infinito. Sádico e manipulador, possui a habilidade de invadir os sonhos de suas vítimas, aprisionando-as em ilusões enquanto consome suas energias. Enmu atua de forma calculista e cruel, alimentando-se da dor emocional dos outros com um prazer distorcido e perigoso.</p>
+            </div>
+        </div>
+        <div id="modal-rengoku" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Kyojuro Rengoku</h2>
+        <strong>
+            <span>Espadachim</span>
+            <span>Tecnica: Respiração das Chamas</span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Rengoku é o Pilar da Chama do Esquadrão de Caçadores de Demônios, conhecido por sua paixão, coragem e senso de justiça. Carismático e otimista, inspira todos ao seu redor com sua convicção inabalável. Domina a Respiração da Chama com maestria.</p>
+            </div>
+        </div>
+        <div id="modal-akaza" class="modal">
+            <div class="modal__content">
+        <span class="fechar">&times;</span>
+        <h2>Akaza</h2>
+        <strong>
+            <span>Demonio</span>
+            <span>Kekkijutsu: Jutsushiki Tenkai </span>
+        </strong>
+        <h3>Descrição:</h3>
+        <p>Akaza é um dos Doze Kizuki, ocupando a posição de Lua Superior Três. Extremamente poderoso e ágil, valoriza a força acima de tudo e despreza os fracos. Seu estilo de combate é brutal e baseado em artes marciais, com ataques destrutivos que combinam força física e energia demoníaca. Encara as batalhas como forma de testar limites e desafiar os mais fortes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./dist/scripts/main.js"></script>
+</body>
+</html>

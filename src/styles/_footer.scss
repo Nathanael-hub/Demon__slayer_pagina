@@ -1,0 +1,49 @@
+.footer{
+    padding: 64px 64px 24px;
+
+    &__link{
+        display: flex;
+        justify-content: center;
+
+        &__item{
+            list-style: none;
+            padding: 0 8px;
+
+            a{
+            text-decoration: none;
+            color: #d62828;
+
+            &:hover{
+                color: #a10c0c;
+                } 
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        padding-top: 64px;
+        color: #fff;
+    }
+}
+
+.lenguage-selector{
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    select{
+        color: #d62828;
+        background: transparent;
+        border: none;
+        height: 20px;
+
+        &:hover{
+            color: #a10c0c;
+        }
+    }
+}
