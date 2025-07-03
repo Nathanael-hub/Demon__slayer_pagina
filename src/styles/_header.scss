@@ -1,6 +1,9 @@
+@use 'variaveis';
+
 .header{
-    background-color: #001219;
-    padding: 8px;
+    background-color: variaveis.$corHeader;
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,16 +26,18 @@
     }
 }
 
+    h1{
+            img{
+                max-width: 110px;
+                padding-top: 4px;
+            }
+        }
+
     &__container{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
-        h1{
-            img{
-                max-width: 110px;
-            }
-        }
+        
+        
 
         &__links{
             list-style-type: none;
@@ -45,19 +50,58 @@
                 a{
                     text-decoration: none;
                     font-size: 18px;
-                    color: #d62828;
+                    color: variaveis.$corSecundaria;
                     font-weight: bold;
                     
                 }
             }
 
             &__item:nth-of-type(4){
-                background-color: #d62828;
+                background-color: variaveis.$corSecundaria;
                 border-radius: 4px;
 
                 a {
-                color: #fff;
+                color: variaveis.$corPadrao;
                 font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        h1{
+                img{
+                max-width:70px ;
+                justify-content: start;
+                }
+            }
+            
+        &__container{
+            margin-right: 32px;
+            &__links{
+                &__item{
+                    padding: 4px;
+                    margin-right: 4px;
+
+                    a{
+                        font-size: 12px;
+                    }
+                }
+
+                &__item:nth-of-type(4){
+                    a{
+                        display: inline-flex;         
+                        align-items: center;
+                        gap: 4px;                     
+                        font-size: 12px;            
+                        padding: 6px 12px;            
+                        color: variaveis.$corPadrao;
+                        font-weight: bold;
+                        text-decoration: none;
+                        white-space: nowrap;         
+                    }
                 }
             }
         }

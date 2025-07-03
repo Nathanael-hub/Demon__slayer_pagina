@@ -1,3 +1,6 @@
+@use 'variaveis';
+
+
 .shows{
     padding: 5.6vw;
 
@@ -9,12 +12,12 @@
             text-decoration: none;
             border: none;
             cursor: pointer;
-            color: #6c757d;
+            color: variaveis.$corAbasD;
             background: none;
 
             &--is-active{
-                color: #dee2e6;
-                border-bottom: 3px solid  #dee2e6;
+                color: variaveis.$corAbasA;
+                border-bottom: 3px solid  variaveis.$corAbasA;
                 
             }
         }
@@ -32,12 +35,12 @@
         &__item{
 
             p{
-                color: #fff;
+                color: variaveis.$corPadrao;
                 max-width: 800px;
             }
 
             h1{
-                color: red;
+                color: variaveis.$corSecundaria;
             }
         }
     }
@@ -73,3 +76,22 @@
         }
     }
 }
+
+
+
+@media (max-width: 768px) {
+    ul.shows__list:nth-of-type(2).shows__list--is-active {
+    grid-template-columns: 1fr;
+
+    p {
+        padding: 12px;
+    }
+
+        button {
+            width: 50%;
+            font-size: 18px;
+            padding: 12px;
+        }
+    }
+}
+

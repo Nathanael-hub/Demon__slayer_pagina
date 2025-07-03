@@ -5,6 +5,8 @@
 @use 'faq';
 @use 'footer';
 @use 'modal';
+@use 'variaveis';
+
 
 *{
     padding: 0;
@@ -13,8 +15,10 @@
 }
 
 body{
-    background-color: #001219;
+    background-color: variaveis.$corDeFundo;
 }
+
+
 
 .button__red{  
     align-items: center;         
@@ -22,21 +26,20 @@ body{
     padding: 18px 40px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: #d62828;
-    color: #fff;
+    background-color: variaveis.$corSecundaria;
+    color: variaveis.$corPadrao;
     border: none;
     cursor: pointer;
     min-width: 200px;
     height: 70px;
 
     &:hover{
-        background-color: darken(#d62828, 20%);
+        background-color: darken(variaveis.$corSecundaria, 20%);
     }
 
         &.button__primary::before{
             content: '\25B6';
             display: inline-block;
-            margin-right: 16px;
             font-size: 16px;
         }
 
@@ -44,7 +47,6 @@ body{
             content: '\271B';
             padding: 0;
             display: inline-block;
-            margin-right: 12px;
-            font-size: 18px;
+            font-size: 16px;
         }
     }

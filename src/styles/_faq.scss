@@ -1,17 +1,19 @@
+@use 'variaveis';
+
 .faq{
     padding: 64px;
 
     h1{
         text-align: center;
-        color: #fff;
+        color: variaveis.$corPadrao;
         font-size: 32px;
         margin: 64px 0;
     }
 
     &__questions{
         &__item{
-            background-color: #000102;
-            color: #fff;
+            background-color: variaveis.$corFaq;
+            color: variaveis.$corPadrao;
             list-style: none;
             padding: 12px;
             margin-top: 12px;
@@ -51,6 +53,26 @@
                     max-height: 1024px;
                     padding-bottom: 24px;
                     transition: max-height, .5s ease ;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .faq{
+        padding: 24px;
+
+        h1{
+            font-size: 24px;
+        }
+
+        &__questions{
+            &__item{
+                &__question{
+                    p{
+                        font-size: 18px;
+                    }
                 }
             }
         }
